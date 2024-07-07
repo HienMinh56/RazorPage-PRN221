@@ -1,0 +1,67 @@
+﻿@page
+@model SaleWebApp.Pages.MemberPage.OrderView.MemberOrderModel
+
+@{
+    var userRole = ViewContext.HttpContext.Session.GetString("UserRole");
+}
+@if (userRole == "Member")
+{
+    <h1>Member Orders</h1>
+
+    @if (Model.Orders.Any())
+    {
+        <table class="order-table">
+            <thead>
+                <tr>
+                    <th>Order Date</th>
+                    <th>RequiredDate</th>
+                    <th>ShippedDate</th>
+                    <th>Freight</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model.Orders)
+                {
+                    <tr>
+                        <td>@order.OrderDate.ToShortDateString()</td>
+                        <td>@order.RequiredDate</td>
+                        <td>@order.ShippedDate</td>
+                        <td>@order.Freight</td>
+                        <td>
+                            <a asp-page="./OrderDetailView" asp-route-orderId="@order.OrderId">Detail</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No orders found for this member.</p>
+    }    
+
+    <style>
+        .order-table {
+        width: 100%;
+        border-collapse: collapse;
+        }
+
+        .order-table th,
+        .order-table td {
+        padding: 5px;
+        border: 1px solid #ccc;
+        }
+    </style>
+    <button type="button" onclick="location.href='@Url.Page("/MemberPage/Profile/Profile")'" class="btn btn-primary">Back to Profile</button>
+}
+else
+{
+    <h1>Access Denied</h1>
+    <p>You do not have permission to access this page.</p>
+    <form>
+        <form method="post" asp-page="/Login" asp-page-handler="Logout">
+            <button type="submit" class="nav-link btn btn-link text-dark">Back to Login</button>
+        </form>
+    </form>
+}

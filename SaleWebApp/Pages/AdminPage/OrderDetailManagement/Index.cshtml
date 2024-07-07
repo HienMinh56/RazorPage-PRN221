@@ -1,0 +1,74 @@
+﻿@page
+@model SaleWebApp.Pages.AdminPage.OrderDetailManagement.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+    var userRole = ViewContext.HttpContext.Session.GetString("UserRole");
+}
+@if (userRole == "Admin")
+{
+    <h1>Order Detail</h1>
+
+    <p>
+        <a asp-page="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.OrderDetail[0].UnitPrice)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.OrderDetail[0].Quantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.OrderDetail[0].Discount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.OrderDetail[0].Order)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.OrderDetail[0].Product)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderDetail)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UnitPrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Discount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OrderId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductId)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.OrderId">Edit</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.OrderId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <h1>Access Denied</h1>
+    <p>You do not have permission to access this page.</p>
+    <form method="post" asp-page="/Login" asp-page-handler="Logout">
+        <button type="submit" class="nav-link btn btn-link text-dark">Back to Login</button>
+    </form>
+}

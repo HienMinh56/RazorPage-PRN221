@@ -1,0 +1,30 @@
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\bin\Debug\net6.0\BusinessObject.dll
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\bin\Debug\net6.0\BusinessObject.pdb
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\obj\Debug\net6.0\DataAccess.csproj.Up2Date
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+D:\Code semester 7th\PRN Assignment 2\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\Code semester 7th\PRN Assignment 2\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\Code semester 7th\PRN Assignment 2\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\Code semester 7th\PRN Assignment 2\DataAccess\bin\Debug\net6.0\BusinessObject.dll
+D:\Code semester 7th\PRN Assignment 2\DataAccess\bin\Debug\net6.0\BusinessObject.pdb
+D:\Code semester 7th\PRN Assignment 2\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\Code semester 7th\PRN Assignment 2\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code semester 7th\PRN Assignment 2\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\Code semester 7th\PRN Assignment 2\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\Code semester 7th\PRN Assignment 2\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Code semester 7th\PRN Assignment 2\DataAccess\obj\Debug\net6.0\DataAccess.csproj.Up2Date
+D:\Code semester 7th\PRN Assignment 2\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\Code semester 7th\PRN Assignment 2\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+D:\Code semester 7th\PRN Assignment 2\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\Code semester 7th\PRN Assignment 2\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

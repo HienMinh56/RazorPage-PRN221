@@ -1,0 +1,28 @@
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\bin\Debug\net6.0\BusinessObject.deps.json
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\bin\Debug\net6.0\BusinessObject.runtimeconfig.json
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\bin\Debug\net6.0\BusinessObject.dll
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\bin\Debug\net6.0\BusinessObject.pdb
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\obj\Debug\net6.0\BusinessObject.csproj.AssemblyReference.cache
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\obj\Debug\net6.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\obj\Debug\net6.0\BusinessObject.AssemblyInfoInputs.cache
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\obj\Debug\net6.0\BusinessObject.AssemblyInfo.cs
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\obj\Debug\net6.0\BusinessObject.csproj.CoreCompileInputs.cache
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\obj\Debug\net6.0\BusinessObject.dll
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\obj\Debug\net6.0\refint\BusinessObject.dll
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\obj\Debug\net6.0\BusinessObject.pdb
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\obj\Debug\net6.0\BusinessObject.genruntimeconfig.cache
+D:\PRN221\Assignment2\SE173521_TrinhQuocCuong\Ass02Solution\BusinessObject\obj\Debug\net6.0\ref\BusinessObject.dll
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\bin\Debug\net6.0\BusinessObject.deps.json
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\bin\Debug\net6.0\BusinessObject.runtimeconfig.json
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\bin\Debug\net6.0\BusinessObject.dll
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\bin\Debug\net6.0\BusinessObject.pdb
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\obj\Debug\net6.0\BusinessObject.csproj.AssemblyReference.cache
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\obj\Debug\net6.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\obj\Debug\net6.0\BusinessObject.AssemblyInfoInputs.cache
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\obj\Debug\net6.0\BusinessObject.AssemblyInfo.cs
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\obj\Debug\net6.0\BusinessObject.csproj.CoreCompileInputs.cache
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\obj\Debug\net6.0\BusinessObject.dll
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\obj\Debug\net6.0\refint\BusinessObject.dll
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\obj\Debug\net6.0\BusinessObject.pdb
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\obj\Debug\net6.0\BusinessObject.genruntimeconfig.cache
+D:\Code semester 7th\PRN Assignment 2\BusinessObject\obj\Debug\net6.0\ref\BusinessObject.dll

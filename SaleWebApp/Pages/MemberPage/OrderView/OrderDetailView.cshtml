@@ -1,0 +1,58 @@
+﻿@page
+@model SaleWebApp.Pages.MemberPage.OrderView.OrderDetailViewModel
+@{
+    var userRole = ViewContext.HttpContext.Session.GetString("UserRole");
+
+}
+@if (userRole == "Member")
+{
+    <h1>Order Detail</h1>
+
+    @if (Model.OrderDetail != null)
+    {
+        <table class="order-details-table">
+            <tr>
+                <th>Order ID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Discount</th>
+            </tr>
+            <tr>
+                <td>@Model.OrderDetail.OrderId</td>
+                <td>@Model.Product.ProductName</td>
+                <td>@Model.OrderDetail.Quantity</td>
+                <td>@Model.Product.UnitPrice</td>
+                <td>@Model.OrderDetail.Discount</td>
+            </tr>
+        </table>
+    }
+    else
+    {
+        <p>Order details not found.</p>
+    }
+
+    <style>
+        .order-details-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .order-details-table th,
+            .order-details-table td {
+                padding: 5px;
+                border: 1px solid #ccc;
+            }
+    </style>
+    <button type="button" onclick="location.href='@Url.Page("/MemberPage/OrderView/MemberOrder")'" class="btn btn-primary">Back to Order</button>
+}
+else
+{
+    <h1>Access Denied</h1>
+    <p>You do not have permission to access this page.</p>
+    <form>
+        <form method="post" asp-page="/Login" asp-page-handler="Logout">
+            <button type="submit" class="nav-link btn btn-link text-dark">Back to Login</button>
+        </form>
+    </form>
+}

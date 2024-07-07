@@ -1,0 +1,73 @@
+﻿@page
+@model SaleWebApp.Pages.AdminPage.AdminDashboardModel
+
+@{
+    var userRole = ViewContext.HttpContext.Session.GetString("UserRole");
+}
+
+@if (userRole == "Admin")
+{
+    <h1>Sales Report</h1>
+
+    <form method="get">
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate">
+
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate">
+
+        <button type="submit" class="btn btn-primary">Generate Report</button>
+    </form>
+
+    @if (Model.Orders != null && Model.Orders.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Member ID</th>
+                    <th>Product Name</th>
+                    <th>Order Date</th>
+                    <th>Required Date</th>
+                    <th>Shipped Date</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Discount</th>
+                    <th>Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model.Orders)
+                {
+                    foreach (var orderDetail in order.OrderDetails)
+                    {
+                        <tr>
+                            <td>@order.OrderId</td>
+                            <td>@order.MemberId</td>
+                            <td>@orderDetail.Product.ProductName</td>
+                            <td>@order.OrderDate.ToShortDateString()</td>
+                            <td>@order.RequiredDate?.ToShortDateString()</td>
+                            <td>@order.ShippedDate?.ToShortDateString()</td>
+                            <td>@orderDetail.Quantity</td>
+                            <td>@orderDetail.UnitPrice</td>
+                            <td>@orderDetail.Discount</td>
+                            <td>@(orderDetail.Quantity * (decimal)orderDetail.UnitPrice * (1 - (decimal)orderDetail.Discount))</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No orders found within the specified period.</p>
+    }
+}
+else
+{
+    <h1>Access Denied</h1>
+    <p>You do not have permission to access this page.</p>
+    <form method="post" asp-page="/Login" asp-page-handler="Logout">
+        <button type="submit" class="btn btn-secondary">Back to Login</button>
+    </form>
+}

@@ -1,0 +1,95 @@
+﻿@page
+@model SaleWebApp.Pages.AdminPage.ProductManagement.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+    var userRole = ViewContext.HttpContext.Session.GetString("UserRole");
+}
+@if (userRole == "Admin")
+{
+    <h1>Product</h1>
+
+    <p>
+        <a asp-page="Create">Create New</a>
+    </p>
+
+    <div class="search-container">
+        <form method="post">
+            <input type="text" name="SearchKeyword" placeholder="Search..." class="search-input" />
+            <select name="SearchCriteria" class="search-dropdown">
+                <option value="0">Product ID</option>
+                <option value="1">Product Name</option>
+                <option value="2">Unit Price</option>
+                <option value="3">Units In Stock</option>
+            </select>
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Product[0].ProductId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Product[0].CategoryId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Product[0].ProductName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Product[0].Weight)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Product[0].UnitPrice)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Product[0].UnitsInStock)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Product)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CategoryId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Weight)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UnitPrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UnitsInStock)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.ProductId">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.ProductId">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.ProductId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <h1>Access Denied</h1>
+    <p>You do not have permission to access this page.</p>
+    <form method="post" asp-page="/Login" asp-page-handler="Logout">
+        <button type="submit" class="nav-link btn btn-link text-dark">Back to Login</button>
+    </form>
+}
